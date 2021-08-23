@@ -40,37 +40,80 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.encabezado .titulo {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
+    margin: auto;
+    /* background-color: yellow; */
+}
+
+.encabezado .titulo h1{
+    font-size: 40px;
+    margin: auto;
+}
+
+.encabezado .titulo h2 {
+    font-weight: 700 ;
+    font-size: 30px;
+    margin: 30px;
+    align-self: flex-end;
 }
 
 .encabezado .menu {
+    width: 100%;
+    height: 20%;
     display: flex;
     flex-direction: row;
-    background-color: blue;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #d18c3e;
 }
 
 .encabezado .menu a{
     color: #fff;
     text-decoration: none;
-    margin-right: 40px;
     font-size: 18px;
-    padding: 20px;
-    background-color: red;
+    margin: 10px;
+    padding: 10px;
+}
+
+.encabezado .menu a:hover{
+    text-decoration: underline;
 }
 
 .principal {
-    width: 70%;
+    width: 60%;
     padding: 30px;
 }
 
 aside {
-    width: 30%;
+    width: 40%;
     background: red;
-    padding: 20px;
+    /* padding: 20px; */
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+aside p {
+    font-size: 30px;
+    width: 100%;
+    background-color: #fff;
+}
+
+aside .imglateral {
+    
 }
 
 .pie {
