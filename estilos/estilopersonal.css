@@ -100,9 +100,10 @@ body{
 aside {
     width: 40%;
     background: red;
-    /* padding: 20px; */
+    padding: 20px;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -113,11 +114,23 @@ aside p {
 }
 
 aside .imglateral {
-    
+    background: #000;
+    margin: 20px 0;
+}
+
+aside .imglateral img {
+    width: 100%;
 }
 
 .pie {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     padding: 20px;
     background-color: green;
     width: 100%;
+}
+
+.pie p {
+    font-weight: 700;
 }
