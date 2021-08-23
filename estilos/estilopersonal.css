@@ -24,26 +24,26 @@ body{
     width: 90%; 
     max-width: 1200px;
     background:var(--verde);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
 }
 
 
 .encabezado {
     width: 100%;
     height: 300px;
-    background: var(--celeste);
+    background:url('../imagenes/fondo.png');
     background-size: cover;
-    /* background-position: center; */
-    /* background-repeat: no-repeat; */
+    background-position: center;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-}
-
-.encabezado {
-
 }
 
 .encabezado .menu {
@@ -61,5 +61,20 @@ body{
     background-color: red;
 }
 
+.principal {
+    width: 70%;
+    padding: 30px;
+}
 
+aside {
+    width: 30%;
+    background: red;
+    padding: 20px;
+    display: flex;
+}
 
+.pie {
+    padding: 20px;
+    background-color: green;
+    width: 100%;
+}
