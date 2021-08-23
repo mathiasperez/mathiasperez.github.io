@@ -7,67 +7,78 @@
         <title>Contacto</title>
         <meta name="description" content=""/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <link rel="stylesheet" href=""/>
+        <link rel="stylesheet" href="estilos/estilopersonal.css"/>
     </head>
     <body>
-        <header>
-            <a href="index.html">&lt;&lt;Volver a la pagina principal</a>
-            <h1>Página de Contacto</h1>
-            <p>Se encuentra aquí los siguientes <mark><em>enlaces de contacto</em></mark> </p>
-        </header>
-
-        <section>
-            <article>
-                <h3>Redes Sociales</h3>
-                <div>    
-                    <p>
-                        <img src="imagenes/redes/facebook.png" alt="Facebook" width="50px"/>
-                        <a target="_blank" href="https://www.facebook.com/leonardomathias.perezsanchez">Página de Facebook</a>
-                    </p>
+        <div class="contenedor">
+            <header class="encabezado">
+                <div class="titulo">
+                    <h1>Bienvenidos a mi Sitio Web</h1>
+                    <h2>Mathías Pérez</h2>
                 </div>
-                
-                <div>    
-                    <p>
-                        <img src="imagenes/redes/linkedin.png" alt="Linkedin" width="50px"/>
-                        <a target="_blank" href="https://www.linkedin.com/in/leonardo-mathias-perez-sanchez-043b8a202/">
-                            Perfil de Linkedin
-                        </a>
-                    </p>
-                </div>
-                <div>    
-                    <p>
-                        <img src="imagenes/redes/github.png" alt="GitHub" width="50px"/>
-                        <a target="_blank" href="https://github.com/mathiasperez">GitHub</a>
-                    </p>
-                </div>
-            </article>
-        </section>
+                <nav class="menu">
+                    <a href="index.html">Inicio</a>
+                    <a href="about.html">Acerca de mí</a>
+                </nav>
+            </header>
+    
+            <!-- <h1>Página de Contacto</h1> -->
+            <!-- <p>Se encuentra aquí los siguientes <mark><em>enlaces de contacto</em></mark> </p> -->
 
-        <section>
-            <h3>Deja un Mensaje</h3>
+            <div class="cuerpo">
+                <section>
+                    <h3>Redes Sociales</h3>
+                    <div class="redes">
+                        <div class="red">    
+                            <img src="imagenes/redes/facebook.png" alt="Facebook" width="50px"/>
+                            <p>
+                                <a target="_blank" href="https://www.facebook.com/leonardomathias.perezsanchez">Página de Facebook</a>
+                            </p>
+                        </div>
+                        
+                        <div class="red">    
+                            <img src="imagenes/redes/linkedin.png" alt="Linkedin" width="50px"/>
+                            <p>
+                                <a target="_blank" href="https://www.linkedin.com/in/leonardo-mathias-perez-sanchez-043b8a202/">
+                                    Perfil de Linkedin
+                                </a>
+                            </p>
+                        </div>
+                        <div class="red">    
+                            <img src="imagenes/redes/github.png" alt="GitHub" width="50px"/>
+                            <p>
+                                <a target="_blank" href="https://github.com/mathiasperez">GitHub</a>
+                            </p>
+                        </div>
+                    </div>
+                </section>
 
-            <!-- Formulario de Prueba -->
-            <form action="" method="">
-                <label for="nombre">Tu nombre:</label><br/>
-                <input type="text" name="nombre" placeholder="Nombre:" id="nombre">
-                <br>
-                <label for="correo">Tu correo:</label><br/>
-                <input type="email" name="correo" placeholder="Correo:">
-                <br>
-                <label for="mensaje">Tu mensaje:</label><br/>
-                <textarea name="mensaje" id="mensaje" placeholder="Mensaje: "></textarea>
-                <br>
-                <input type="submit" value="Enviar">
-            </form>
-            <p>O envíame un correo a: <a href="mailto:lperezs17_1@unc.edu.pe">lperezs17_1@unc.edu.pe</a></p>
-        </section>
-        
+                <section class="item">
+                    <h3>Deja un Mensaje</h3>
+                    <form action="" method="">
+                        <div class="formulario">
+                            <label for="nombre">Tu nombre:</label><br/>
+                            <input type="text" name="nombre" placeholder="Nombre:" id="nombre">
+                            <br>
+                            <label for="correo">Tu correo:</label><br/>
+                            <input type="email" name="correo" placeholder="Correo:">
+                            <br>
+                            <label for="mensaje">Tu mensaje:</label><br/>
+                            <textarea name="mensaje" id="mensaje" placeholder="Mensaje: "></textarea>
+                            <br>
+                            <input type="submit" value="Enviar">
+                        </div>
+                    </form>
+                    <p>O envíame un correo a: <a href="mailto:lperezs17_1@unc.edu.pe">lperezs17_1@unc.edu.pe</a></p>
+                </section>
 
-        <footer>
-            <br/>
-            <a href="index.html">&lt;&lt;Volver a la pagina principal</a>
-            <br/> 
-            <p>&copy; Mathías Pérez - <abbr title="Universidad Nacional de Cajamarca">UNC</abbr> 2021</p>
-        </footer>
+            </div>
+            
+            <footer class="pie">
+                <p class="carrera">Ingeniería de Sistemas - Ingeniería Web</p>
+                <p class="copyright">Copyright &copy; 2021 - Mathías Pérez</p>
+                <p class="unc"><abbr title="Universidad Nacional de Cajamarca">UNC</abbr></p>
+            </footer>
+        </div>
     </body>
 </html>
