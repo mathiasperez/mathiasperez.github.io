@@ -1,7 +1,4 @@
 :root{
-    --gris: #8A95A5;
-    --verde:#B9C6AE;
-    --celeste: #3E83D1;
 }
 
 * {
@@ -13,32 +10,29 @@
 }
 
 body{
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Quicksand", sans-serif;
     font-size: 12px;
-    background: #a4a4a4;
+    font-weight: 400;
+    background: url('../imagenes/fondogeneral.jpg');
 }
 
 
 .contenedor {
     margin:auto;  
     width: 90%; 
-    max-width: 1200px;
-    background:var(--verde);
+    max-width: 1000px;
+    /* background: #000; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* justify-content: space-around; */
+    justify-content: space-between;
 }
 
 
 .encabezado {
     width: 100%;
-    height: 300px;
-    background:url('../imagenes/fondo.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    height: 200px;
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -48,58 +42,79 @@ body{
 
 .encabezado .titulo {
     width: 100%;
-    height: 80%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-    margin: auto;
-    /* background-color: yellow; */
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    /* background: orange; */
+    height: 70%;
 }
 
 .encabezado .titulo h1{
-    font-size: 40px;
-    margin: auto;
+    font-size: 30px;
 }
 
 .encabezado .titulo h2 {
-    font-weight: 700 ;
     font-size: 30px;
-    margin: 30px;
-    align-self: flex-end;
 }
 
 .encabezado .menu {
     width: 100%;
-    height: 20%;
+    height: 30%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: #d18c3e;
+    background-color: #333;
+    /* background-color: #191d4b; */
 }
 
 .encabezado .menu a{
     color: #fff;
     text-decoration: none;
     font-size: 18px;
-    margin: 10px;
+    margin: auto 20px;
     padding: 10px;
 }
 
 .encabezado .menu a:hover{
-    text-decoration: underline;
+    /* background-color: #4c76bd; */
+    background-color: rgba(76, 118, 189, .2);
 }
 
-.principal {
+.contenido {
+    width: 100%;
+    /* background: yellow;  */
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contenido .principal {
     width: 60%;
-    padding: 30px;
+    padding: 20px;
+    background-color: #f6f6f6;
 }
 
-aside {
+.contenido .principal h3 {
+    text-align: center;
+    margin: 20px;
+    font-size: 30px;
+}
+
+.contenido .principal article {
+    border: black solid 3px;
+}
+
+.contenido aside {
     width: 40%;
-    background: red;
+    background-color: #191d4b;
+    /* background: #1b1b1b; */
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -110,27 +125,55 @@ aside {
 aside p {
     font-size: 30px;
     width: 100%;
-    background-color: #fff;
+    color: #fff;
+    text-align: center;
 }
 
 aside .imglateral {
-    background: #000;
-    margin: 20px 0;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
 }
 
 aside .imglateral img {
-    width: 100%;
+    width: 90%;
+    margin: 10px;
+}
+
+aside .imglateral img:hover {
+    opacity: .8;
 }
 
 .pie {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 20px;
-    background-color: green;
+    background-color: #333;
     width: 100%;
 }
 
 .pie p {
-    font-weight: 700;
+    font-weight: 400;
+    color: #fff;
+    font-size: 18px;
+    padding:20px;
+    padding-bottom: 12px;
+}
+
+.pie .unc {
+    order:2;
+}
+
+.pie .carrera{
+    order: 1;
+}
+
+.pie .copyright {
+    display: flex;
+    text-align: center;
+    order: 3;
+    width: 100%;
+    justify-content: flex-end;
 }
