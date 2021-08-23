@@ -7,176 +7,194 @@
         <title>Acerca de Mí</title>
         <meta name="description" content=""/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="estilos/estilopersonal.css">
         <link rel="stylesheet" href=""/>
     </head>
     <body>
 
-        <header>
-            <a href="index.html">&lt;&lt;Volver a la pagina principal</a>
-            <h1>Acerca de mí</h1>
-            <nav id="menu">
-                <ol>
-                    <li><a href="#laboral">Experiencia laboral</a></li>
-                    <li><a href="#estudios">Estudios</a></li>
-                    <li><a href="#hobbies">Hobbies</a></li>
-                    <li><a href="#visitas">Lugares que visité</a></li>
-                </ol>
-            </nav>
-        </header>
+        <div class="contenedor">
+            <header class="encabezado">
+                <div class="titulo">
+                    <h1>Bienvenidos a mi Sitio Web</h1>
+                    <h2>Mathías Pérez</h2>
+                </div>
+                <nav class="menu">
+                    <a href="index.html">Inicio</a>
+                    <a href="contact.html">Contacto</a>
+                </nav>
+            </header>
 
-        <section id="laboral">
-            <h3>Experiencia Laboral</h3>
-            <table border="3">
-                <caption>Experiencia Laboral</caption>
-                <tr>
-                    <th>Lugar de trabajo</th>
-                    <th>Cargo</th>
-                    <th>Periodo</th>
-                    <th>Ciudad</th>
-                </tr>
-                <tr>
-                    <td>EAD Companies</td>
-                    <td>Asistente Junior</td>
-                    <td>01/2018 - 03/2018</td>
-                    <td rowspan="3">Cajamarca</td>
-                </tr>
-                <tr>
-                    <td>Librería Hernández</td>
-                    <td>Almacén</td>
-                    <td>02/2019 - 03/2019<br/><br/>01/2020 - 03/2020</td>
-                </tr>
-                <tr>
-                    <td>SAT Cajamarca</td>
-                    <td>Notificador</td>
-                    <td>08/2019 - 12/2019</td>
-                </tr>
-
-            </table>
-        </section>
-        
-        <section id="estudios">
-            <h3>Estudios</h3>
-                <table border="3">
-                    <caption>Mis Estudios</caption>
-                    <tr>
-                        <th>Institución</th>
-                        <th>Periodo</th>
-                        <th>Ciudad</th>
-                    </tr>
-                    <tr>
-                        <td>IEP Niño Jesús</td>
-                        <td>2006 - 2011</td>
-                        <td rowspan="4">Cajamarca</td>
-                    </tr>
-                    <tr>
-                        <td>IEP Alexander Von Humboldt</td>
-                        <td>2012 - 2014</td>
-                    </tr>
-                    <tr>
-                        <td>IE San Ramón</td>
-                        <td>2015 - 2016</td>
-                    </tr>
-                    <tr>
-                        <td>Universidad Nacional de Cajamarca</td>
-                        <td>2017 - Actualidad</td>
-                    </tr>
-                </table>
-        </section>
-
-        <section id="hobbies">
-            <h3>Hobbies</h3>
-            <ul>
-                <li type="square">Basketball
-                    <ul>
-                        <li type="none">
-                            <div>
-                                <img src="imagenes/hobbies/basketball.jpg" alt="Basketball" width="150px"/>
+            <div class="cuerpo">
+                <nav class="menu" id="menu">
+                    <a href="#laboral">Experiencia laboral</a>
+                    <a href="#estudios">Estudios</a>
+                    <a href="#hobbies">Hobbies</a>
+                    <a href="#visitas">Lugares que visité</a>
+                </nav>
+                
+               <div class="contenido">
+                   <div class="principal">
+                    <h3>Acerca de mí</h3>
+                    <section id="laboral" class="item">
+                        <h3>Experiencia Laboral</h3>
+                        <table border="3">
+                            <caption>Experiencia Laboral</caption>
+                            <tr>
+                                <th>Lugar de trabajo</th>
+                                <th>Cargo</th>
+                                <th>Periodo</th>
+                                <th>Ciudad</th>
+                            </tr>
+                            <tr>
+                                <td>EAD Companies</td>
+                                <td>Asistente Junior</td>
+                                <td>01/2018 - 03/2018</td>
+                                <td rowspan="3">Cajamarca</td>
+                            </tr>
+                            <tr>
+                                <td>Librería Hernández</td>
+                                <td>Almacén</td>
+                                <td>02/2019 - 03/2019<br/><br/>01/2020 - 03/2020</td>
+                            </tr>
+                            <tr>
+                                <td>SAT Cajamarca</td>
+                                <td>Notificador</td>
+                                <td>08/2019 - 12/2019</td>
+                            </tr>
+            
+                        </table>
+                    </section>
+                    
+                    <section id="estudios" class="item">
+                        <h3>Estudios</h3>
+                            <table border="3">
+                                <caption>Mis Estudios</caption>
+                                <tr>
+                                    <th>Institución</th>
+                                    <th>Periodo</th>
+                                    <th>Ciudad</th>
+                                </tr>
+                                <tr>
+                                    <td>IEP Niño Jesús</td>
+                                    <td>2006 - 2011</td>
+                                    <td rowspan="4">Cajamarca</td>
+                                </tr>
+                                <tr>
+                                    <td>IEP Alexander Von Humboldt</td>
+                                    <td>2012 - 2014</td>
+                                </tr>
+                                <tr>
+                                    <td>IE San Ramón</td>
+                                    <td>2015 - 2016</td>
+                                </tr>
+                                <tr>
+                                    <td>Universidad Nacional de Cajamarca</td>
+                                    <td>2017 - Actualidad</td>
+                                </tr>
+                            </table>
+                    </section>
+            
+                    <section id="hobbies" class="item">
+                        <h3>Hobbies</h3>
+                        <ul>
+                            <li type="square">Basketball
+                                <ul>
+                                    <li type="none">
+                                        <div>
+                                            <img src="imagenes/hobbies/basketball.jpg" alt="Basketball" width="150px"/>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li type="square">Tocar guitarra
+                                <ul>
+                                    <li type="none">
+                                        <div>
+                                            <img src="imagenes/hobbies/guitarra.jpg" alt="Guitarra" width="150px"/>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li type="square">Escuchar música
+                                <ul>
+                                    <li type="none">
+                                        <div>
+                                            <img src="imagenes/hobbies/musica.jpg" alt="Música" width="150px"/>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li type="square">Ver películas
+                                <ul>
+                                    <li type="none">
+                                        <div>
+                                            <img src="imagenes/hobbies/peliculas.jpg" alt="Películas" width="150px"/>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
+            
+                    <section id="visitas" class="item">
+                        <h3>Últimos lugares que visité</h3>
+                        <div>
+                            <p>Asunción</p>
+                            <img src="imagenes/lugares/asuncion.jpeg" alt="Asunción" width="250px"/>
+                            <img src="imagenes/lugares/asunciondos.jpg" alt="Asunción" width="200px"/>
+                        </div>
+                        <div>
+                            <p>Chiclayo</p>
+                            <img src="imagenes/lugares/chiclayo.jpeg" alt="Chiclayo" width="250px"/>
+                        </div>
+                        <div>
+                            <p>Pimentel</p>
+                            <img src="imagenes/lugares/pimentel.jpeg" alt="Pimentel" width="250px"/>
+                        </div>
+                        <footer>
+                            <a href="#menu">&lt;Volver al menú</a>
+                        </footer>
+                    </section>
+                   </div>
+    
+                <!-- Barra lateral -->
+                <aside>
+                    <section>
+                        <p>Comidas Favoritas</p>
+                        <div>
+                            <p>Salpicón de Pollo</p>
+                            <div class="imglateral">
+                                <img src="imagenes/comidas/salpicondepollo.jpg" alt="Salpicón de Pollo" width="250px"/>
                             </div>
-                        </li>
-                    </ul>
-                </li>
-                <li type="square">Tocar guitarra
-                    <ul>
-                        <li type="none">
-                            <div>
-                                <img src="imagenes/hobbies/guitarra.jpg" alt="Guitarra" width="150px"/>
+                        </div>
+                        <div>
+                            <p>Escabeche de Pollo</p>
+                            <div class="imglateral">
+                                <img src="imagenes/comidas/escabechedepollo.jpg" alt="Escabeche de Pollo" width="250px"/>
                             </div>
-                        </li>
-                    </ul>
-                </li>
-                <li type="square">Escuchar música
-                    <ul>
-                        <li type="none">
-                            <div>
-                                <img src="imagenes/hobbies/musica.jpg" alt="Música" width="150px"/>
+                        </div>
+                        <div>
+                            <p>Lomito Saltado</p>
+                            <div class="imglateral">
+                                <img src="imagenes/comidas/lomitosaltado.jpg" alt="Lomito Saltado" width="250px"/>
                             </div>
-                        </li>
-                    </ul>
-                </li>
-                <li type="square">Ver películas
-                    <ul>
-                        <li type="none">
-                            <div>
-                                <img src="imagenes/hobbies/peliculas.jpg" alt="Películas" width="150px"/>
+                        </div>
+                        <div>
+                            <p>Ceviche</p>
+                            <div class="imglateral">
+                                <img src="imagenes/comidas/ceviche.jpg" alt="Ceviche" width="250px"/>
                             </div>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-
-        <section id="visitas">
-            <h3>Últimos lugares que visité</h3>
-            <div>
-                <p>Asunción</p>
-                <img src="imagenes/lugares/asuncion.jpeg" alt="Asunción" width="250px"/>
-                <img src="imagenes/lugares/asunciondos.jpg" alt="Asunción" width="200px"/>
+                        </div>
+                    </section>
+                </aside>
+               </div>
             </div>
-            <div>
-                <p>Chiclayo</p>
-                <img src="imagenes/lugares/chiclayo.jpeg" alt="Chiclayo" width="250px"/>
-            </div>
-            <div>
-                <p>Pimentel</p>
-                <img src="imagenes/lugares/pimentel.jpeg" alt="Pimentel" width="250px"/>
-            </div>
-            <footer>
-                <a href="#menu">&lt;Volver al menú</a>
+
+            <footer class="pie">
+                <p class="carrera">Ingeniería de Sistemas - Ingeniería Web</p>
+                <p class="copyright">Copyright &copy; 2021 - Mathías Pérez</p>
+                <p class="unc"><abbr title="Universidad Nacional de Cajamarca">UNC</abbr></p>
             </footer>
-        </section>
-
-        <br>
-        <br>
-
-        <!-- Barra lateral -->
-        <aside>
-            <section>
-                <p>Comidas Favoritas</p>
-                <div>
-                    <p>Salpicón de Pollo</p>
-                    <img src="imagenes/comidas/salpicondepollo.jpg" alt="Salpicón de Pollo" width="250px"/>
-                </div>
-                <div>
-                    <p>Escabeche de Pollo</p>
-                    <img src="imagenes/comidas/escabechedepollo.jpg" alt="Escabeche de Pollo" width="250px"/>
-                </div>
-                <div>
-                    <p>Lomito Saltado</p>
-                    <img src="imagenes/comidas/lomitosaltado.jpg" alt="Lomito Saltado" width="250px"/>
-                </div>
-                <div>
-                    <p>Ceviche</p>
-                    <img src="imagenes/comidas/ceviche.jpg" alt="Ceviche" width="250px"/>
-                </div>
-            </section>
-        </aside>
-        
-        <footer>
-            <br/>
-            <a href="index.html">&lt;&lt;Volver a la pagina principal</a>
-            <br/>
-            <p>&copy; Mathías Pérez - UNC 2021</p>
-        </footer>
-
+        </div>
     </body>
 </html>
