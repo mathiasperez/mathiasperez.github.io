@@ -13,6 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!--Fin de código copiado-->
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link rel="stylesheet" href="estilos/estilopersonal.css">
     
     <title>Página de Contacto</title>
@@ -45,31 +47,33 @@
                     <div class="redes">
 
                         <!-- Inicio red 1 -->
-                        <div class="red">    
-                            <img src="imagenes/redes/facebook.png" alt="Facebook" width="50px"/>
-                            <p>
-                                <a target="_blank" href="https://www.facebook.com/leonardomathias.perezsanchez">Página de Facebook</a>
-                            </p>
+                        <div class="red">
+                            <div class="icono-red facebook">
+                                <a target="_blank" href="https://www.facebook.com/leonardomathias.perezsanchez"><i class="fab fa-facebook-f"></i></a>
+                            </div>    
+                            <p>Página de Facebook</p>
                         </div>
                         <!-- Fin red 1 -->
                         
                         <!-- Inicio red 2 -->
-                        <div class="red">    
-                            <img src="imagenes/redes/linkedin.png" alt="Linkedin" width="50px"/>
-                            <p>
+                        <div class="red">
+                            <div class="icono-red linkedin">
                                 <a target="_blank" href="https://www.linkedin.com/in/leonardo-mathias-perez-sanchez-043b8a202/">
-                                    Perfil de Linkedin
+                                    <i class="fab fa-linkedin-in"></i>
                                 </a>
-                            </p>
+                            </div>    
+                            <p>Perfil de Linkedin</p>
                         </div>
                         <!-- Fin red 2 -->
 
                         <!-- Inicio red 3 -->
                         <div class="red">    
-                            <img src="imagenes/redes/github.png" alt="GitHub" width="50px"/>
-                            <p>
-                                <a target="_blank" href="https://github.com/mathiasperez">GitHub</a>
-                            </p>
+                            <div class="icono-red github">
+                                <a target="_blank" href="https://github.com/mathiasperez">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                            <p>Página de Github</p>
                         </div>
                         <!-- Fin red 3 -->
 
@@ -78,32 +82,77 @@
                 </section>
                 <!-- Fin de item contenido 1 -->
 
-                <!-- Inicio de item contenido 2 -->
-                <section class="item-contenido">
-                    <h2>Deja un mensaje</h2>
-                    <form action="" method="">
-                        <div class="formulario">
-                            <label for="nombre">Tu nombre:</label><br/>
-                            <input type="text" name="nombre" placeholder="Nombre:" id="nombre">
-                            <br>
-                            <label for="correo">Tu correo:</label><br/>
-                            <input type="email" name="correo" placeholder="Correo:">
-                            <br>
-                            <label for="mensaje">Tu mensaje:</label><br/>
-                            <textarea name="mensaje" id="mensaje" placeholder="Mensaje: "></textarea>
-                            <br>
-                            <input type="submit" value="Enviar">
-                        </div>
-                    </form>
-                    <p>O envíame un correo a: <a href="mailto:lperezs17_1@unc.edu.pe">lperezs17_1@unc.edu.pe</a></p>
-                </section>
-                <!-- Fin de item contenido 2 -->
             </div>
             <!-- Fin de contenido -->
 
             <!-- Inicio de barra lateral -->
             <aside class="lateral">
-                
+                <p class="titulo-lateral">Deja un mensaje</p>
+
+                <!-- Inicio item lateral 1 -->
+                <div class="item-lateral">
+                    <!-- Inicio Bulma FORM -->
+                    <form action="" class="formulario">
+                        <div class="field">
+                            <label class="label">Nombre</label>
+                            <p class="control has-icons-left has-icons-right">
+                              <input class="input" type="text" placeholder="Escribe tu nombre">
+                              <span class="icon is-small is-left">
+                                <i class="fas fa-user-alt"></i>
+                              </span>
+                              <span class="icon is-small is-right">
+                                <i class="fas fa-check"></i>
+                              </span>
+                            </p>
+                        </div>
+                        <div class="field">
+                            <label class="label">Correo electrónico</label>
+                            <p class="control has-icons-left has-icons-right">
+                              <input class="input" type="email" placeholder="Escribe tu email">
+                              <span class="icon is-small is-left">
+                                <i class="fas fa-envelope"></i>
+                              </span>
+                              <span class="icon is-small is-right">
+                                <i class="fas fa-check"></i>
+                              </span>
+                            </p>
+                        </div>
+                        
+                        <div class="field">
+                            <label class="label">Message</label>
+                            <div class="control">
+                              <textarea class="textarea" placeholder="Textarea"></textarea>
+                            </div>
+                        </div>
+                        
+                        <div class="field">
+                            <div class="control">
+                              <label class="checkbox">
+                                <input type="checkbox">
+                                I agree to the <a href="#">terms and conditions</a>
+                              </label>
+                            </div>
+                        </div>
+                                                  
+                        <div class="field is-grouped">
+                            <div class="control">
+                                <input type="submit" class="button is-link" value="Enviar">
+                            </div>
+                            <div class="control">
+                                <input type="reset" class="button is-link is-light" value="Limpiar">
+                            </div>
+                        </div>
+                    </form>
+                    <!-- Fin Bulma FORM -->
+                </div>
+                <!-- Fin item lateral 1 -->
+
+                <!-- Inicio item lateral 2 -->
+                <div class="item-lateral">
+                    <p class="subtitulo-lateral">Envíame un correo</p>
+                    <p>Mi Correo: <a href="mailto:lperezs17_1@unc.edu.pe">lperezs17_1@unc.edu.pe</a></p>
+                </div>
+                <!-- Fin item lateral 2 -->
             </aside>
             <!-- Fin de barra lateral -->
         </div>

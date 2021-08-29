@@ -96,6 +96,60 @@ body{
     justify-content: space-between;
 }
 
+.cuerpo .contenido .item-contenido .redes {
+    border: white solid 3px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cuerpo .contenido .item-contenido .redes .red {
+    border: blueviolet solid 3px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cuerpo .contenido .item-contenido .redes .red p {
+    text-align: center;
+    color: white;
+
+    font-size: 20px;
+    margin: 10px auto;
+}
+
+.cuerpo .contenido .item-contenido .redes .red .icono-red {
+    border: red solid 3px;
+
+    font-size: 60px;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.cuerpo .contenido .item-contenido .redes .red .icono-red a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.cuerpo .contenido .item-contenido .redes .red .facebook {
+    background-color: #1877f2;
+}
+
+.cuerpo .contenido .item-contenido .redes .red .linkedin {
+    background-color: #dd5143;
+}
+
+.cuerpo .contenido .item-contenido .redes .red .github {
+    background-color: #6e5494;
+}
+
+
 /* Estilos de Barra lateral */
 
 .cuerpo .lateral {
@@ -154,11 +208,10 @@ body{
     
 }
 
-
-/* .pie p {
+.pie p {
     font-weight: 400;
     color: #fff;
     font-size: 18px;
     padding:20px;
     padding-bottom: 12px;
-} */
+}
