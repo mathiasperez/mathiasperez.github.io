@@ -87,6 +87,15 @@ body{
     width: 60%;
 }
 
+.cuerpo .contenido .item-contenido {
+    border: blue solid 3px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 /* Estilos de Barra lateral */
 
 .cuerpo .lateral {
