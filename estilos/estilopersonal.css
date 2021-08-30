@@ -6,9 +6,13 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 14px;
+}
+
 body{
     font-family: "Quicksand", sans-serif;
-    font-size: 12px;
+    font-size: 1rem;
     font-weight: 400;
     background: url('../imagenes/fondogeneral.jpg');
 }
@@ -56,7 +60,7 @@ body{
     background: #1c1c1c;
     padding: 6px;
     border: 3px;
-    font-size: 15px;
+    font-size: 1.25rem;
     margin-top: -4px;
     transition: all 500ms ease;
     opacity: 0;
@@ -87,7 +91,7 @@ body{
 .icon-play {
     cursor:pointer;
     transition: all 0.4s;
-    font-size: 12px;
+    font-size: 1rem;
     margin-bottom: 5px;
     display: inline-block;
     transform: rotate(180deg);
@@ -150,7 +154,7 @@ body{
 }
 
 .encabezado .titulo h1, h2{
-    font-size: 30px;
+    font-size: 2.5rem;
 }
 
 .contenedor .encabezado .menu {
@@ -171,7 +175,7 @@ body{
 .contenedor .encabezado .menu a{
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.5rem;
     margin: 5px;
     padding: 10px;
 }
@@ -216,7 +220,7 @@ body{
 }
 
 .navbar .nav-link{
-    font-size: 18px;
+    font-size: 1.5rem;
     text-align: center;
     color: #000;
     font-weight: bold;
@@ -257,14 +261,14 @@ body{
 }
 
 .cuerpo .contenido .item-contenido article p {
-    font-size: 20px;
+    font-size: 1.67rem;
     padding: 5px;
     margin: 10px;
 }
 
 .cuerpo .contenido .item-contenido article blockquote {
     text-align: justify;
-    font-size: 20px;
+    font-size: 1.67rem;
 }
 
 .cuerpo .contenido .item-contenido article blockquote cite {
@@ -277,7 +281,7 @@ body{
 .cuerpo .contenido .item-contenido h2,h3{
     text-align: center;
     margin: 20px;
-    font-size: 30px;
+    font-size: 2.5rem;
     font-weight: bold;
 }
 
@@ -307,7 +311,7 @@ body{
 }
 
 .cuerpo .contenido .item-contenido .redes .red .icono-red {
-    font-size: 60px;
+    font-size: 5rem;
     text-align: center;
     width: 80%;
     margin: auto;
@@ -332,13 +336,13 @@ body{
 }
 
 .carousel-caption h5 {
-    font-size: 25px;
+    font-size: 2.08rem;
     font-weight: bold;
     color: #191d4b;
 }
 
 #visitas .carousel-caption p {
-    font-size: 15px;
+    font-size: 1.25rem;
     font-weight: bold;
     color: #191d4b;
 }
@@ -361,7 +365,7 @@ body{
     color: #fff;   
     border: #fff outset 2px;
     background: #113F77;
-    font-size: 30px;
+    font-size: 2.5rem;
     width: 100%;
     text-align: center;
     margin-top: 10px;
@@ -379,7 +383,7 @@ body{
 }
 
 .cuerpo .lateral .item-lateral p {
-    font-size: 15px;
+    font-size: 1.25rem;
     color: #fff;
     font-weight: bold;
 }
@@ -418,7 +422,7 @@ body{
 
 .cuerpo .lateral .item-lateral .subtitulo-lateral {
     color: #fff;   
-    font-size: 20px;
+    font-size: 1.67rem;
     width: 100%;
     text-align: center;
     margin: 10px;
@@ -465,7 +469,7 @@ body{
 .pie p {
     font-weight: 400;
     color: #fff;
-    font-size: 18px;
+    font-size: 1.5rem;
     padding: 10px;
     padding-bottom: 12px;
 }
@@ -474,6 +478,10 @@ body{
 
 /* Diseño adaptable */
 @media screen and (max-width:800px) {
+
+    html {
+        font-size: 10px;
+    }
 
     .contenedor {
         width: 100%;
@@ -495,6 +503,14 @@ body{
         align-items: center;
     }
 
+    .navbar .container-fluid {
+        background: #000;
+        z-index: 1;
+    }
+
+    .container-bar {
+        z-index: 0;
+    }
 
     .navbar .navbar-collapse .mb-lg-0 {
         display: flex;
