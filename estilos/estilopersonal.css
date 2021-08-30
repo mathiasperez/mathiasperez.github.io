@@ -16,13 +16,10 @@ body{
 
 /* Estilos de Div Contenedor de página */
 
-.contenedor {
-    border: black solid 5px;
-    
+.contenedor {    
     width: 90%; 
     max-width: 1000px;
     margin:auto;
-    margin-top: 30px;  
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -33,67 +30,161 @@ body{
 /* Estilos de Encabezado */
 
 .contenedor .encabezado {
-    border: blue solid 3px;
-    margin-top: 20px;
+    margin-top: 30px;
 
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-content: center;
+
+    width: 100%;
+    height: 30%;
 }
 
 .contenedor .encabezado .titulo {
-    border: green solid 3px;
-
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    color: #fff;
+    width: 100%;
+    height: 70%;
+    padding-bottom: 10px;
+}
+
+.encabezado .titulo h1, h2{
+    font-size: 30px;
 }
 
 .contenedor .encabezado .menu {
-    border: red solid 3px;
-
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 30%;
+    background-color: #333;
+    padding: 5px;
 }
 
+
+
+.contenedor .encabezado .menu a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 5px;
+    padding: 10px;
+}
+
+.contenedor .encabezado .menu a:hover{
+    background-color: rgba(76, 118, 189, .2);
+    border-radius: 5px;
+}
 
 
 
 /* Estilos de cuerpo de página */
 
 .cuerpo {
-    border: seagreen solid 6px;
-
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    height: 60%;
 }
+
+.cuerpo .navbar {
+    width: 100%;
+}
+
+.cuerpo .navbar .container-fluid .navbar-brand {
+    border: #000 dotted 3px;
+    padding: 10px;
+    color: #000;
+    font-weight: bold;
+}
+
+
+.navbar .navbar-collapse .navbar-nav {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.navbar .nav-link{
+    font-size: 18px;
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-item a {
+    border-radius: 5px;
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-item a:hover {
+    background-color: #97DACD;
+    border-radius: 5px;
+}
+
 
 /* Estilos de contenido de página */
 
 .cuerpo .contenido {
-    border: orange solid 5px;
-
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
 
     width: 60%;
+    padding: 20px;
+    background-color: #fff;
 }
 
 .cuerpo .contenido .item-contenido {
-    border: blue solid 3px;
-
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+
+    border: black dashed 4px;
+    margin: 20px;
+    padding: 15px;
+}
+
+.cuerpo .contenido .item-contenido article p {
+    font-size: 20px;
+    padding: 5px;
+    margin: 10px;
+}
+
+.cuerpo .contenido .item-contenido article blockquote {
+    text-align: justify;
+    font-size: 20px;
+}
+
+.cuerpo .contenido .item-contenido article blockquote cite {
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+    font-style: italic;
+}
+
+.cuerpo .contenido .item-contenido h2,h3{
+    text-align: center;
+    margin: 20px;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .cuerpo .contenido .item-contenido .redes {
@@ -106,8 +197,6 @@ body{
 }
 
 .cuerpo .contenido .item-contenido .redes .red {
-    border: blueviolet solid 3px;
-
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -116,15 +205,14 @@ body{
 
 .cuerpo .contenido .item-contenido .redes .red p {
     text-align: center;
-    color: white;
+    color: #CC8726;
+    font-weight: bold;
 
-    font-size: 20px;
+    font-size: 25px;
     margin: 10px auto;
 }
 
 .cuerpo .contenido .item-contenido .redes .red .icono-red {
-    border: red solid 3px;
-
     font-size: 60px;
     text-align: center;
     width: 80%;
@@ -149,11 +237,21 @@ body{
     background-color: #6e5494;
 }
 
+.carousel-caption h5 {
+    font-size: 25px;
+    font-weight: bold;
+    color: #191d4b;
+}
+
+#visitas .carousel-caption p {
+    font-size: 15px;
+    font-weight: bold;
+    color: #191d4b;
+}
 
 /* Estilos de Barra lateral */
 
 .cuerpo .lateral {
-    border: red solid 5px;
 
     display: flex;
     flex-direction: column;
@@ -161,17 +259,47 @@ body{
     justify-content: space-around;
 
     width: 40%;
+    background-color: #191d4b;
+    padding: 20px;
 }
 
-.cuerpo .lateral .item-lateral {
-    border: black solid 3px;
+.cuerpo .lateral .titulo-lateral{
+    color: #fff;   
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
 
+
+.cuerpo .lateral .item-lateral {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    width: 95%;
+    text-align: center;
 }
 
+.cuerpo .lateral .item-lateral img{
+    width: 100%;
+    margin: auto;
+    padding: 5px;
+    border: orange solid 2px;
+}
+
+.cuerpo .lateral .item-lateral img:hover{
+    opacity: .8;
+}
+
+.cuerpo .lateral .item-lateral .subtitulo-lateral {
+    color: #fff;   
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+}
 
 
 
@@ -179,7 +307,6 @@ body{
 /* Estilos de Footer de toda la página */
 
 .contenedor .pie {
-    border: greenyellow solid 5px;
 
     display: flex;
     flex-direction: row;
@@ -187,6 +314,10 @@ body{
     justify-content: space-between;
 
     width: 100%;
+    padding: 20px;
+    background-color: #333;
+
+    height: 10%;
 }
 
 .pie .unc {
@@ -212,6 +343,61 @@ body{
     font-weight: 400;
     color: #fff;
     font-size: 18px;
-    padding:20px;
+    padding: 10px;
     padding-bottom: 12px;
+}
+
+
+
+/* Diseño adaptable */
+@media screen and (max-width:800px) {
+
+    .contenedor {
+        width: 100%;
+    }
+
+    .contenedor .cuerpo .contenido {
+        width: 100%;
+    }
+
+    .contenedor .encabezado .menu {
+        padding: 0;
+    }
+
+    .contenedor .encabezado .menu a{
+        margin: 0;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .contenedor .cuerpo .lateral {
+        width: 100%;
+    }
+
+    .contenedor .pie p{
+        width: 100%;
+    }
+    
+    .pie .unc {
+        order: 1;
+        text-align: center;
+    }
+
+    .pie .carrera {
+        order:2;
+        text-align: center;
+    }
+
+    .pie .curso {
+        order:3;
+    }
+
+    .pie .copyright {
+        order:4;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
 }

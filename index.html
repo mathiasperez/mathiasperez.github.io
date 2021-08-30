@@ -5,7 +5,8 @@
   <meta name="author" content="Mathias Perez"/>
   <meta name="keywords" content="laboratorio,pagina personal,ingenieria web,html"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, user-scalable=no,
+  initial-scale=1.0, maximum-scale=1.0, minimun-scale=1.0"/>
 
   <!-- Código copiado para fuente Quicksand -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,8 +14,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <!--Fin de código copiado-->
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="estilos/estilopersonal.css">
 
   <title>Mathías Pérez</title>
@@ -29,10 +32,14 @@
                 <h1>Bienvenidos a mi Sitio Web</h1>
                 <h2>Mathías Pérez</h2>
             </div>    
+
+
+            <!-- Inicio menu -->
             <nav class="menu">
-                <a href="about.html">Acerca de mí</a>
+                <a href="about.html">Acerca de Mí</a>
                 <a href="contact.html">Contacto</a>
             </nav>
+            <!-- Fin menu -->
         </header>
         <!-- Fin de encabezado -->
 
@@ -57,9 +64,8 @@
 
                 <!-- Inicio item contenido 2 -->
                 <section class="item-contenido">
-                    <h2>Cita</h2>
+                    <h2>Frase</h2>
                     <article>
-                        <h3>H3 de Cita</h3>
                         <blockquote>
                             El hombre llega mucho más lejos para evitar lo que teme que para alcanzar lo que desea.
                             <br/>
@@ -74,16 +80,22 @@
 
             <!-- Inicio de barra lateral -->
             <aside class="lateral">
-              <p class="titulo-lateral">Fotos</p>
-      
-              <!-- Inicio de item lateral -->
-              <div class="item-lateral">
-                  <p class="subtitulo-lateral">YO</p>
-                    <div class="imagen-lateral">
-                        <img src="imagenes/lateral.jpeg" alt="Mathías Pérez" title="Mathías Pérez" width="300"/> 
-                    </div>
-              </div>
-              <!-- Fin de item lateral -->
+                <p class="titulo-lateral">Mis Fotos</p>
+
+                <!-- Inicio de item lateral 1 -->
+                <div class="item-lateral">
+                    <p class="subtitulo-lateral">Llacanora</p>
+                    <img src="imagenes/yo/me1.jpeg" alt="">
+                </div>
+                <!-- Fin de item lateral 1--> 
+
+                <!-- Inicio de item lateral 2-->
+                <div class="item-lateral">
+                    <p class="subtitulo-lateral">Concierto</p>
+                    <img src="imagenes/yo/me2.jpg" alt="">
+                </div>
+                <!-- Fin de item lateral 2--> 
+
             </aside>
             <!-- Fin de barra lateral -->
         </div>
@@ -101,7 +113,6 @@
 
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-
 </body>
 </html>
 
