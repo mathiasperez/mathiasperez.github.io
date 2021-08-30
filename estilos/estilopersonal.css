@@ -13,6 +13,101 @@ body{
     background: url('../imagenes/fondogeneral.jpg');
 }
 
+/* Barra fija de redes */
+
+.container-bar {
+    width: 100%;
+    max-width: 55px;
+    position: fixed;
+    left: 0;
+    top: 25%;
+}
+
+.container-bar a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 17px;
+    position: relative;
+    transition: all 500ms ease;
+    color: #fff;
+}
+
+.container-bar a:hover {
+    background: #1c1c1c;
+}
+
+.container-bar .icon-facebook {
+    background: #1877f2;
+    border-radius: 0px 5px 0px 0px;
+}
+
+.container-bar .icon-linkedin {
+    background: #dd5143;
+}
+
+.container-bar .icon-github {
+    background: #6e5494;
+    border-radius: 0px 0px 5px 0px;
+}
+
+.container-bar #title {
+    position: fixed;
+    background: #1c1c1c;
+    padding: 6px;
+    border: 3px;
+    font-size: 15px;
+    margin-top: -4px;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.container-bar a:hover #title {
+    opacity: 1;
+    visibility: visible;
+    margin-left: 30px;
+}
+
+.container-bar #title::after {
+    position: absolute;
+    content: '';
+    border-left: 7px solid transparent;
+    border-right: 6px solid #1c1c1c;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    right: 100%;
+    top: 8px;
+}
+
+#btn-social {
+    display: none;
+}
+
+.icon-play {
+    cursor:pointer;
+    transition: all 0.4s;
+    font-size: 12px;
+    margin-bottom: 5px;
+    display: inline-block;
+    transform: rotate(180deg);
+    color: #49b0e6;
+}
+
+#btn-social:checked ~.icon-play {
+    transform: rotate(0deg);
+}
+
+.icon-social {
+    transition: all 0.4s;
+    transform: translateX(0%);
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, .3);
+}
+
+#btn-social:checked ~.icon-social {
+    transform: translateX(-100%);
+}
+
 
 /* Estilos de Div Contenedor de página */
 
@@ -30,7 +125,7 @@ body{
 /* Estilos de Encabezado */
 
 .contenedor .encabezado {
-    margin-top: 30px;
+    margin-top: 50px;
 
     display: flex;
     flex-direction: column;
@@ -104,7 +199,6 @@ body{
 }
 
 .cuerpo .navbar .container-fluid .navbar-brand {
-    border: #000 dotted 3px;
     padding: 10px;
     color: #000;
     font-weight: bold;
@@ -265,6 +359,8 @@ body{
 
 .cuerpo .lateral .titulo-lateral{
     color: #fff;   
+    border: #fff outset 2px;
+    background: #113F77;
     font-size: 30px;
     width: 100%;
     text-align: center;
@@ -280,6 +376,10 @@ body{
 
     width: 95%;
     text-align: center;
+}
+
+.cuerpo .lateral .item-lateral label {
+    color: #fff;
 }
 
 .cuerpo .lateral .item-lateral img{
