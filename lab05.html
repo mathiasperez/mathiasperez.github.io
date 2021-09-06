@@ -16,6 +16,7 @@
     <title>Laboratorio 05 JS</title>
 </head>
 <body>
+    <!-- Inicio de contenedor -->
     <div class="contenedor">
 
         <!-- Inicio de encabezado (header) -->
@@ -33,62 +34,75 @@
         </header>
         <!-- Fin de encabezado -->
 
+        <!-- Inicio de Contenico -->
         <div class="contenido">
+
             <h2 class="titulo-contenido">LAB 05: TALLER DE JAVASCRIPT</h2>
 
-        <section class="item-contenido">
-            <div class="cuadros">
-                <div class="item">
-                    <label for="apellidosNombres" class="indicador azul">Apellidos y Nombres:</label>
-                    <input class="ingresar" type="text" name="datos" id="apellidosNombres" placeholder="Ingrese Apellidos y nombres"/>
+            <!-- Inicio de Item Contenido 1 -->
+            <section class="item-contenido">
+                <!-- Inicio de cuadros -->
+                <div class="cuadros">
+                    <div class="item">
+                        <label for="apellidosNombres" class="indicador azul">Apellidos y Nombres:</label>
+                        <input class="ingresar" type="text" name="datos" id="apellidosNombres" placeholder="Ingrese Apellidos y nombres"/>
+                    </div>
+                    <div class="item">
+                        <label for="fechaNacimiento" class="indicador azul">Fecha de Nacimiento:</label>
+                        <input class="ingresar" type="date" name="fecha" id="fechaNacimiento" placeholder="dd-mm-yyyy">
+                    </div>
                 </div>
-                <div class="item">
-                    <label for="fechaNacimiento" class="indicador azul">Fecha de Nacimiento:</label>
-                    <input class="ingresar" type="date" name="fecha" id="fechaNacimiento" placeholder="dd-mm-yyyy">
-                </div>
-            </div>
-            <div class="botones">
-                <button id="extraer" class="boton naranja">Extraer</button>
-                <button id="colorear" class="boton rojo">Colorear</button>
-            </div>
-        </section>
+                <!-- Fin de cuadros -->
 
-        <section class="item-contenido">
-            <div class="cuadros">
-                <div class="item">
-                    <label for="paterno" class="indicador azul">Apellido paterno:</label>
-                    <input type="text" readonly="readonly" class="llenar" id="paterno">
+                <!-- Inicio de cuadros -->
+                <div class="cuadros">
+                    <div class="botones">
+                        <button id="btn-extraer" class="naranja">Extraer</button>
+                        <button id="btn-colorear" class="rojo">Colorear</button>
+                    </div>
                 </div>
-                <div class="item">
-                    <label for="materno" class="indicador azul">Apellido materno:</label>
-                    <input type="text" readonly="readonly" class="llenar" id="materno">
-                </div>
-                <div class="item">
-                    <label for="nombres" class="indicador azul">Nombres:</label>
-                    <input type="text" readonly="readonly" class="llenar" id="nombres">
-                </div>
-            </div>
+                <!-- Fin de cuadros -->
+            </section>
+            <!-- Fin de Item Contenido 1 -->
 
-            <div class="cuadros">
-                <div class="item">
-                    <label for="longitud" class="indicador rojo">Longitud del apellido:</label>
-                    <input type="text" readonly="readonly" class="llenar" id="longitud">
+            <!-- Inicio de Item Contenido 2 -->
+            <section class="item-contenido">
+                <!-- Inicio de cuadros -->
+                <div class="cuadros">
+                    <div class="item">
+                        <label for="paterno" class="indicador azul">Apellido paterno:</label>
+                        <input type="text" readonly="readonly" class="llenar" id="paterno">
+                    </div>
+                    <div class="item">
+                        <label for="materno" class="indicador azul">Apellido materno:</label>
+                        <input type="text" readonly="readonly" class="llenar" id="materno">
+                    </div>
+                    <div class="item">
+                        <label for="nombres" class="indicador azul">Nombres:</label>
+                        <input type="text" readonly="readonly" class="llenar" id="nombres">
+                    </div>
                 </div>
-                <div class="item">
-                    <label for="edad" class="indicador rojo">Edad:</label>
-                    <input type="text" readonly="readonly" class="llenar" id="edad">
+                <!-- Fin de cuadros -->
+
+                <div class="cuadros">
+                    <div class="item">
+                        <label for="longitud" class="indicador rojo">Longitud del apellido:</label>
+                        <input type="text" readonly="readonly" class="llenar" id="longitud">
+                    </div>
+                    <div class="item">
+                        <label for="edad" class="indicador rojo">Edad:</label>
+                        <input type="text" readonly="readonly" class="llenar" id="edad">
+                    </div>
+                    <div class="item">
+                        <label for="mes" class="indicador rojo">Mes en letras:</label>
+                        <input type="text" readonly="readonly" class="llenar" id="mes">
+                    </div>
                 </div>
-                <div class="item">
-                    <label for="mes" class="indicador rojo">Mes en letras:</label>
-                    <input type="text" readonly="readonly" class="llenar" id="mes">
-                </div>
-            </div>
-        </section>
+            </section>
+            <!-- Fin de Item Contenido 2 -->
         </div>
-
-        
-
-
+        <!-- Fin de Contenido -->
     </div>
+    <!-- Fin de Contenedor -->
 </body>
 </html>

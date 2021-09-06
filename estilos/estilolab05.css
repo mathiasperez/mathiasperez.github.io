@@ -123,18 +123,29 @@ body{
     margin: 10px auto;
 }
 
-.contenedor .item-contenido .botones {
+
+.contenedor .contenido .item-contenido .cuadros {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    width: 45%;
+    margin: 10px;
+}
+
+.contenedor .item-contenido .cuadros .botones {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 
-    width: 50%;
+    width: 100%;
 
     align-items: flex-start;
 }
 
-.contenedor .item-contenido .botones button {
+.contenedor .item-contenido .cuadros .botones button {
     display: inline-block;
     margin: 20px;
     margin-top: 10px;
@@ -146,20 +157,11 @@ body{
     font-size: 16px;
 }
 
-.contenedor .item-contenido .botones .naranja{
+.contenedor .item-contenido .cuadros .botones .naranja{
     background: #f19d19;
     border: #fff solid 2px;
 }
 
-.contenedor .contenido .item-contenido .cuadros {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
-
-    width: 40%;
-    margin: 10px;
-}
 
 .contenedor .contenido .item-contenido .item {
     width: 100%;
