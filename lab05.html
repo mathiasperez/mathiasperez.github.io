@@ -33,54 +33,62 @@
         </header>
         <!-- Fin de encabezado -->
 
-        <section class="contenido">
-            <div class="ingresar">
-                <div class="apellidos-nombres">
-                    <p class="indicador azul">Apellidos y nombres: </p>
-                    <input type="text" name="datos" id="apellidosNombres" placeholder="Ingrese Apellidos y nombres"/>
+        <div class="contenido">
+            <h2 class="titulo-contenido">LAB 05: TALLER DE JAVASCRIPT</h2>
+
+        <section class="item-contenido">
+            <div class="cuadros">
+                <div class="item">
+                    <label for="apellidosNombres" class="indicador azul">Apellidos y Nombres:</label>
+                    <input class="ingresar" type="text" name="datos" id="apellidosNombres" placeholder="Ingrese Apellidos y nombres"/>
                 </div>
-                <div class="fecha-nacimiento">
-                    <p class="indicador azul">Fecha de Nacimiento: </p>
-                    <input type="text" name="fecha" id="fechaNacimiento" placeholder="dd-mm-yyyy">
+                <div class="item">
+                    <label for="fechaNacimiento" class="indicador azul">Fecha de Nacimiento:</label>
+                    <input class="ingresar" type="date" name="fecha" id="fechaNacimiento" placeholder="dd-mm-yyyy">
                 </div>
             </div>
             <div class="botones">
                 <button id="extraer" class="boton naranja">Extraer</button>
-                <button id="extraer" class="boton rojo">Colorear</button>
+                <button id="colorear" class="boton rojo">Colorear</button>
             </div>
         </section>
 
-        <section class="contenido">
-            <div class="informacion">
+        <section class="item-contenido">
+            <div class="cuadros">
                 <div class="item">
-                    <p class="indicador azul">Apellido paterno:</p>
-                    <p id="paterno" class="llenar"></p>
+                    <label for="paterno" class="indicador azul">Apellido paterno:</label>
+                    <input type="text" readonly="readonly" class="llenar" id="paterno">
                 </div>
                 <div class="item">
-                    <p class="indicador azul">Apellido materno:</p>
-                    <p id="materno" class="llenar"></p>
+                    <label for="materno" class="indicador azul">Apellido materno:</label>
+                    <input type="text" readonly="readonly" class="llenar" id="materno">
                 </div>
                 <div class="item">
-                    <p class="indicador azul">Nombres:</p>
-                    <p id="nombres" class="llenar"></p>
+                    <label for="nombres" class="indicador azul">Nombres:</label>
+                    <input type="text" readonly="readonly" class="llenar" id="nombres">
                 </div>
             </div>
 
-            <div class="calculos">
+            <div class="cuadros">
                 <div class="item">
-                    <p class="indicador rojo">Longitud del apellido:</p>
-                    <p id="longitud" class="llenar"></p>
+                    <label for="longitud" class="indicador rojo">Longitud del apellido:</label>
+                    <input type="text" readonly="readonly" class="llenar" id="longitud">
                 </div>
                 <div class="item">
-                    <p class="indicador rojo">Edad:</p>
-                    <p id="edad" class="llenar"></p>
+                    <label for="edad" class="indicador rojo">Edad:</label>
+                    <input type="text" readonly="readonly" class="llenar" id="edad">
                 </div>
                 <div class="item">
-                    <p class="indicador rojo">Mes en letras:</p>
-                    <p id="mes" class="llenar"></p>
+                    <label for="mes" class="indicador rojo">Mes en letras:</label>
+                    <input type="text" readonly="readonly" class="llenar" id="mes">
                 </div>
             </div>
         </section>
+        </div>
+
+        
+
+
     </div>
 </body>
 </html>

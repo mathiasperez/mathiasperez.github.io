@@ -17,12 +17,22 @@ body{
     background: url('../imagenes/fondogeneral.jpg');
 }
 
+.rojo {
+    background: #b74919;
+    border: #9c7b6b solid 2px;
+}
+
+.azul {
+    background: #1d6fa9;
+}
+
 /* Estilos de Div Contenedor de página */
 
 .contenedor {    
     width: 90%; 
     max-width: 1000px;
     margin:auto;
+
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -57,7 +67,7 @@ body{
     padding-bottom: 10px;
 }
 
-.encabezado .titulo h1, h2{
+.encabezado .titulo h1{
     font-size: 2.5rem;
 }
 
@@ -86,3 +96,113 @@ body{
     background-color: rgba(76, 118, 189, .2);
     border-radius: 5px;
 }
+
+.contenedor .contenido {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    background: #c8f5e8;
+}
+
+.contenedor .contenido .titulo-contenido {
+    text-align: center;
+    padding: 10px;
+}
+
+.contenedor .item-contenido {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 10px auto;
+}
+
+.contenedor .item-contenido .botones {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 50%;
+
+    align-items: flex-start;
+}
+
+.contenedor .item-contenido .botones button {
+    display: inline-block;
+    margin: 20px;
+    margin-top: 10px;
+    padding:5px;
+    border-radius: 10px;
+    width: 30%;
+
+    color: #fff;
+    font-size: 16px;
+}
+
+.contenedor .item-contenido .botones .naranja{
+    background: #f19d19;
+    border: #fff solid 2px;
+}
+
+.contenedor .contenido .item-contenido .cuadros {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    width: 40%;
+    margin: 10px;
+}
+
+.contenedor .contenido .item-contenido .item {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contenedor .contenido .item-contenido .cuadros .item .indicador {
+    display: block;
+    text-align: left;
+
+    border: green solid 2px;
+
+    width: 50%;
+    height: 30px;
+    padding-left: 10px;
+
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.contenedor .contenido .item-contenido .cuadros .item .azul {
+    border:#186195 solid 2px;
+}
+
+.contenedor .contenido .item-contenido .cuadros .item .rojo {
+    border: #a74216 solid 2px;
+}
+
+.contenedor .contenido .item-contenido .cuadros .item input {
+    width: 50%;
+    border: #f8ede8 solid 2px;
+}
+
+
+
+
