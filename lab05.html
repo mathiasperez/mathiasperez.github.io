@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio 05 JS</title>
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <h1>LAB 05: TALLER DE JAVASCRIPT</h1>
+        </header>
+
+        <section class="contenido">
+            <div class="ingresar">
+                <div class="apellidos-nombres">
+                    <p class="indicador azul">Apellidos y nombres: </p>
+                    <input type="text" name="datos" id="apellidosNombres" placeholder="Ingrese Apellidos y nombres"/>
+                </div>
+                <div class="fecha-nacimiento">
+                    <p class="indicador azul">Fecha de Nacimiento: </p>
+                    <input type="text" name="fecha" id="fechaNacimiento" placeholder="dd-mm-yyyy">
+                </div>
+            </div>
+            <div class="botones">
+                <button id="extraer" class="boton naranja">Extraer</button>
+                <button id="extraer" class="boton rojo">Colorear</button>
+            </div>
+        </section>
+
+        <section class="contenido">
+            <div class="informacion">
+                <div class="item">
+                    <p class="indicador azul">Apellido paterno:</p>
+                    <p id="paterno" class="llenar"></p>
+                </div>
+                <div class="item">
+                    <p class="indicador azul">Apellido materno:</p>
+                    <p id="materno" class="llenar"></p>
+                </div>
+                <div class="item">
+                    <p class="indicador azul">Nombres:</p>
+                    <p id="nombres" class="llenar"></p>
+                </div>
+            </div>
+
+            <div class="calculos">
+                <div class="item">
+                    <p class="indicador rojo">Longitud del apellido:</p>
+                    <p id="longitud" class="llenar"></p>
+                </div>
+                <div class="item">
+                    <p class="indicador rojo">Edad:</p>
+                    <p id="edad" class="llenar"></p>
+                </div>
+                <div class="item">
+                    <p class="indicador rojo">Mes en letras:</p>
+                    <p id="mes" class="llenar"></p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
