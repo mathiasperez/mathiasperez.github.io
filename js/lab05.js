@@ -1,26 +1,37 @@
 (function(){
     window.onload = function(){
 
-        // let colorear = document.getElementById("btn-colorear");
-        
-        // colorear.onclick = function(){
+        let colorear = document.getElementById("btn-colorear");
 
-        //     // alert('botón colorear')
+        colorear.onclick = function(){
 
-        //     let colorAzul = document.getElementsByClassName("azul");
-        //     let colorRojo = document.getElementsByClassName("rojo");
+            // alert('botón colorear')
 
-        //     let azulNumero = colorAzul.length;
-        //     let rojoNumero = colorRojo.length;
+            let colorAzul = document.getElementsByClassName("azul");
+            let colorRojo = document.getElementsByClassName("rojo");
 
-        //     for(let i=azulNumero-1; i >= 0; i-- ){
-        //         for(let j=rojoNumero-1; j >= 0; i--){
-        //             colorRojo.item(j).className = colorRojo.item(j).className.replace("rojo","azul");
-        //         }
-        //         colorAzul.item(i).className = colorAzul.item(i).className.replace("azul","rojo");
-        //     }
+            let azulNumero = colorAzul.length;
+            let rojoNumero = colorRojo.length;
+
+            let azules = [];
+            for(let i=0; i < colorAzul.length; i++){
+                azules.push(colorAzul.item(i));
+            }
+
+            let rojos = [];
+            for(let i=0; i < colorRojo.length; i++){
+                rojos.push(colorRojo.item(i));
+            }
+
+            for(let i=0; i < azulNumero; i++){
+                azules[i].className = "rojo";
+            }
+
+            for(let i=0; i < rojoNumero; i++){
+                rojos[i].className = "azul";
+            }
             
-        // }
+        }
 
         let extraer = document.getElementById("btn-extraer");
 

@@ -172,7 +172,7 @@ body{
     justify-content: space-between;
 }
 
-.contenedor .contenido .item-contenido .cuadros .item .indicador {
+.contenedor .contenido .item-contenido .cuadros .item label {
     display: block;
     text-align: left;
 
@@ -203,8 +203,13 @@ body{
 .contenedor .contenido .item-contenido .cuadros .item input {
     width: 50%;
     border: #f8ede8 solid 2px;
+    padding-left: 5px;
+    font-weight: bold;
 }
 
+.contenedor .contenido .item-contenido .cuadros .item .llenar{
+    background: rgba(198,198,198,.8);
+}
 
 
 
