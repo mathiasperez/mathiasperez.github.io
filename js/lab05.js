@@ -5,8 +5,6 @@
 
         colorear.onclick = function(){
 
-            // alert('botón colorear')
-
             let colorAzul = document.getElementsByClassName("azul");
             let colorRojo = document.getElementsByClassName("rojo");
 
