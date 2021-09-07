@@ -212,4 +212,46 @@ body{
 }
 
 
+@media screen and (max-width:800px) {
 
+
+    html {
+        font-size: 10px;
+    }
+
+    .contenedor .contenido .item-contenido .cuadros {
+        width: 100%;
+    }
+
+    .contenedor .contenido .item-contenido .cuadros .item {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .contenedor .contenido .item-contenido .cuadros .item label {
+        width: 100%;
+    }
+
+    .contenedor .contenido .item-contenido .cuadros .item input {
+        width: 100%;
+    }
+
+    .contenedor .item-contenido .cuadros .botones button{
+        display: block;   
+        width: 90%;
+    }
+
+    .contenedor .encabezado .titulo {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .encabezado .titulo h1{
+        font-size: 1.5rem;
+    }
+
+}
